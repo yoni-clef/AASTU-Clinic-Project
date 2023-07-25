@@ -295,7 +295,7 @@ ofstream fout;
 fout.open("Patient Appointment.doc");
 fout<<"---------Available Appointments--------\n";
 for(int i=0;i<numOfApp;++i){
-     fout<<"\n\t\t\tDate of appointment:"<<meeting[i].appointmentDate<<"\nAppointment Time:"<<meeting[i].appointmentTime<<"\n\nName: "
+     fout<<"\n\t\t\tDate of appointment:"<<meeting[i].appointmentDate<<"\n\t\t\tAppointment Time:"<<meeting[i].appointmentTime<<"\n\nName: "
         <<meeting[i].patient.name<<"\tDate of Birth: "<<meeting[i].patient.dateOfBirth<<"\nAge: "<<meeting[i].patient.age<<"\tSex: "
         <<meeting[i].patient.sex<<"\tHeight: "<<meeting[i].patient.height<<"\tWeight: "<<meeting[i].patient.weight
         <<"\nMedical Record Number: "<<meeting[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "<<meeting[i].addressOf.phoneNum
