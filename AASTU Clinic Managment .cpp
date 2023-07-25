@@ -41,7 +41,7 @@ string procedure;
 };
 
 
-//We declared a global variable numOfPatient to use it in multiple places
+//We declared a global variable numOfPatient and numOfApp to use it in multiple places
 
 int numOfPatient=0;
 int numOfApp=0;
