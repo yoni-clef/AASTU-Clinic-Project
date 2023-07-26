@@ -155,7 +155,7 @@ for(int i=0;i<numOfPatient;++i){
         fout<<"\n\t\t\tDate of Registration: "<<patient[i].dateOfRegistration<<"\n\nName: "<<patient[i].patient.name<<"\tDate of Birth: "
         <<patient[i].patient.dateOfBirth<<"\nAge: "<<patient[i].patient.age<<"\tSex: "<<patient[i].patient.sex<<"\tHeight: "<<patient[i].patient.height
         <<"\tWeight: "<<patient[i].patient.weight<<"\nMedical Record Number: "<<patient[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "
-        <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"Home Address: "
+        <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"\nHome Address: "
         <<patient[i].addressInfo.homeAddress<<"\n\nEmergency contact\n\nName: "<<patient[i].addressInfo.emergencyContactName<<"\nPhone Number: "
         <<patient[i].addressInfo.emergencyContactPhone<<"\n\nGeneral Medical History:\n\n"<<patient[i].medicalHistory<<endl;
     }
@@ -171,7 +171,7 @@ void displayRecord(){
         cout<<"\n\t\t\tDate of Registration: "<<patient[i].dateOfRegistration<<"\n\nName: "<<patient[i].patient.name<<"\tDate of Birth: "
         <<patient[i].patient.dateOfBirth<<"\nAge: "<<patient[i].patient.age<<"\tSex: "<<patient[i].patient.sex<<"\tHeight: "<<patient[i].patient.height
         <<"\tWeight: "<<patient[i].patient.weight<<"\nMedical Record Number: "<<patient[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "
-        <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"Home Address: "
+        <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"\nHome Address: "
         <<patient[i].addressInfo.homeAddress<<"\n\nEmergency contact\n\nName: "<<patient[i].addressInfo.emergencyContactName<<"\nPhone Number: "
         <<patient[i].addressInfo.emergencyContactPhone<<"\n\nGeneral Medical History:\n\n"<<patient[i].medicalHistory<<endl;
     }
@@ -199,7 +199,7 @@ void Search(){
                     cout<<"\n\t\t\tDate of Registration: "<<patient[i].dateOfRegistration<<"\n\nName: "<<patient[i].patient.name<<"\tDate of Birth: "
                     <<patient[i].patient.dateOfBirth<<"\nAge: "<<patient[i].patient.age<<"\tSex: "<<patient[i].patient.sex<<"\tHeight: "<<patient[i].patient.height
                     <<"\tWeight: "<<patient[i].patient.weight<<"\nMedical Record Number: "<<patient[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "
-                    <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"Home Address: "
+                    <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"\nHome Address: "
                     <<patient[i].addressInfo.homeAddress<<"\n\nEmergency contact\n\nName: "<<patient[i].addressInfo.emergencyContactName<<"\nPhone Number: "
                     <<patient[i].addressInfo.emergencyContactPhone<<"\n\nGeneral Medical History:\n\n"<<patient[i].medicalHistory<<endl;
                 }
@@ -217,7 +217,7 @@ void Search(){
                     cout<<"\n\t\t\tDate of Registration: "<<patient[i].dateOfRegistration<<"\n\nName: "<<patient[i].patient.name<<"\tDate of Birth: "
                     <<patient[i].patient.dateOfBirth<<"\nAge: "<<patient[i].patient.age<<"\tSex: "<<patient[i].patient.sex<<"\tHeight: "<<patient[i].patient.height
                     <<"\tWeight: "<<patient[i].patient.weight<<"\nMedical Record Number: "<<patient[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "
-                    <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"Home Address: "
+                    <<patient[i].addressInfo.phoneNum<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity: "<<patient[i].addressInfo.city<<"\nHome Address: "
                     <<patient[i].addressInfo.homeAddress<<"\n\nEmergency contact\n\nName: "<<patient[i].addressInfo.emergencyContactName<<"\nPhone Number: "
                     <<patient[i].addressInfo.emergencyContactPhone<<"\n\nGeneral Medical History:\n\n"<<patient[i].medicalHistory<<endl;
                 }
@@ -285,7 +285,7 @@ for(int i=0;i<numOfApp;++i){
         <<meeting[i].patient.name<<"\tDate of Birth: "<<meeting[i].patient.dateOfBirth<<"\nAge: "<<meeting[i].patient.age<<"\tSex: "
         <<meeting[i].patient.sex<<"\tHeight: "<<meeting[i].patient.height<<"\tWeight: "<<meeting[i].patient.weight
         <<"\nMedical Record Number: "<<meeting[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "<<meeting[i].addressOf.phoneNum
-        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity: "<<meeting[i].addressOf.city<<"Home Address: "<<meeting[i].addressOf.homeAddress
+        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity: "<<meeting[i].addressOf.city<<"\nHome Address: "<<meeting[i].addressOf.homeAddress
         <<"\n\nDepartment: "<<meeting[i].department<<"\nProcedure: "<<meeting[i].procedure<<endl;
 }
 
@@ -301,7 +301,7 @@ void displayAppointments(){
         <<meeting[i].patient.name<<"\tDate of Birth: "<<meeting[i].patient.dateOfBirth<<"\nAge: "<<meeting[i].patient.age<<"\tSex: "
         <<meeting[i].patient.sex<<"\tHeight: "<<meeting[i].patient.height<<"\tWeight: "<<meeting[i].patient.weight
         <<"\nMedical Record Number: "<<meeting[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "<<meeting[i].addressOf.phoneNum
-        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity:"<<meeting[i].addressOf.city<<"Home Address: "<<meeting[i].addressOf.homeAddress
+        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity:"<<meeting[i].addressOf.city<<"\nHome Address: "<<meeting[i].addressOf.homeAddress
         <<"\n\nDepartment: "<<meeting[i].department<<"\nProcedure: "<<meeting[i].procedure<<endl;
     }
 
