@@ -276,6 +276,7 @@ for(int i=numOfApp;i<(numOfApp+currentSize);++i){
             getline(cin,meeting[i].appointmentDate);
             cout<<"Enter the time of the appointment:";
             getline(cin,meeting[i].appointmentTime);
+            system("cls");
 
 }
 numOfApp+=currentSize;
@@ -302,7 +303,7 @@ void displayAppointments(){
     else{
             cout<<"\n----Available Appointments-------\n";
     for(int i=0;i<numOfApp;++i){
-        cout<<"\n\t\t\tDate of appointment:"<<meeting[i].appointmentDate<<"\nAppointment Time:"<<meeting[i].appointmentTime<<"\n\nName: "
+        cout<<"\n\t\t\tDate of appointment:"<<meeting[i].appointmentDate<<"\n\t\t\tAppointment Time:"<<meeting[i].appointmentTime<<"\n\nName: "
         <<meeting[i].patient.name<<"\tDate of Birth: "<<meeting[i].patient.dateOfBirth<<"\nAge: "<<meeting[i].patient.age<<"\tSex: "
         <<meeting[i].patient.sex<<"\tHeight: "<<meeting[i].patient.height<<"\tWeight: "<<meeting[i].patient.weight
         <<"\nMedical Record Number: "<<meeting[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "<<meeting[i].addressOf.phoneNum
