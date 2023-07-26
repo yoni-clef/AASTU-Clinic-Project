@@ -254,8 +254,8 @@ void setAppointment(){
     int currentSize;
 cout<<"How many appointments do you want to add:";
 cin>>currentSize;
-for(int i=numOfApp;i<(numOfApp+currentSize);++i){
             cin.ignore();
+for(int i=numOfApp;i<(numOfApp+currentSize);++i){
             cout<<"\nEnter the name of the patient: ";
             getline(cin,meeting[i].patient.name);
             cout<<"Enter the birth date of the patient: ";
