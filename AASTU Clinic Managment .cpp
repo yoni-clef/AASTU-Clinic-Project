@@ -145,7 +145,7 @@ void getRecord(){
 //...the console we can still find the record in the patient.doc file
 void storeRecord(){
 ofstream fout;
-fout.open("Patient.doc");
+fout.open("PatientRecords.doc");
         fout<<"\n----AASTU Clinic Patient Record------\n";
 for(int i=0;i<numOfPatient;++i){
         fout<<"\n\t\t\tDate of Registration:"<<patient[i].dateOfRegistration<<"\n\nName: "<<patient[i].patient.name<<"\tDate of Birth: "
@@ -208,10 +208,6 @@ void Search(){
                 cout<<patient[i].addressInfo.emergencyContactName<<"\nPhone Number: "<<patient[i].addressInfo.emergencyContactPhone;
                 cout<<"\n\nGeneral Medical History:\n\n"<<patient[i].medicalHistory<<endl;
                 }
-             else{
-                    cout<<"Sorry! There is no Patient Record with that Name."<<endl;
-                    goto choice;
-             }
             }
             break;
     }
@@ -232,11 +228,6 @@ void Search(){
                   cout<<"\nSub-city: "<<patient[i].addressInfo.subCity<<"\nCity:"<<patient[i].addressInfo.city<<"\n\nEmergency contact\n\nName: ";
                   cout<<patient[i].addressInfo.emergencyContactName<<"\nPhone Number: "<<patient[i].addressInfo.emergencyContactPhone;
                   cout<<"\n\nGeneral Medical History:\n\n"<<patient[i].medicalHistory<<endl;
-                }
-                else{
-                    cout<<"Sorry! There is no Patient Record with this Medical Record Number."<<endl;
-                    goto choice;
-
                 }
             }
             break;
@@ -292,7 +283,7 @@ storeAppointment();
 }
 void storeAppointment(){
 ofstream fout;
-fout.open("Patient Appointment.doc");
+fout.open("Patient Appointments.doc");
 fout<<"---------Available Appointments--------\n";
 for(int i=0;i<numOfApp;++i){
      fout<<"\n\t\t\tDate of appointment:"<<meeting[i].appointmentDate<<"\n\t\t\tAppointment Time:"<<meeting[i].appointmentTime<<"\n\nName: "
