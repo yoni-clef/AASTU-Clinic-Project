@@ -103,8 +103,8 @@ void getRecord(){
     int currentSize;
     cout<<"\nEnter the number of patient records you want to add:";
     cin>>currentSize;
-    for(int i=numOfPatient;i<(currentSize+numOfPatient);++i){
             cin.ignore();
+    for(int i=numOfPatient;i<(currentSize+numOfPatient);++i){
             cout<<"\nEnter the name of the patient: ";
             getline(cin,patient[i].patient.name);
             cout<<"Enter the birth date of the patient: ";
@@ -299,7 +299,7 @@ for(int i=0;i<numOfApp;++i){
         <<meeting[i].patient.name<<"\tDate of Birth: "<<meeting[i].patient.dateOfBirth<<"\nAge: "<<meeting[i].patient.age<<"\tSex: "
         <<meeting[i].patient.sex<<"\tHeight: "<<meeting[i].patient.height<<"\tWeight: "<<meeting[i].patient.weight
         <<"\nMedical Record Number: "<<meeting[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "<<meeting[i].addressOf.phoneNum
-        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity:"<<meeting[i].addressOf.city<<"\nDepartment: "<<meeting[i].department
+        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity:"<<meeting[i].addressOf.city<<"\n\nDepartment: "<<meeting[i].department
         <<"\nProcedure: "<<meeting[i].procedure<<endl;
 }
 
@@ -315,7 +315,7 @@ void displayAppointments(){
         <<meeting[i].patient.name<<"\tDate of Birth: "<<meeting[i].patient.dateOfBirth<<"\nAge: "<<meeting[i].patient.age<<"\tSex: "
         <<meeting[i].patient.sex<<"\tHeight: "<<meeting[i].patient.height<<"\tWeight: "<<meeting[i].patient.weight
         <<"\nMedical Record Number: "<<meeting[i].medicalRecordNum<<"\n\nPatient contact\n\n"<<"Phone Number: "<<meeting[i].addressOf.phoneNum
-        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity:"<<meeting[i].addressOf.city<<"\nDepartment: "<<meeting[i].department
+        <<"\nSub-city: "<<meeting[i].addressOf.subCity<<"\nCity:"<<meeting[i].addressOf.city<<"\n\nDepartment: "<<meeting[i].department
         <<"\nProcedure: "<<meeting[i].procedure<<endl;
     }
 
