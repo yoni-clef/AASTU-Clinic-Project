@@ -359,17 +359,13 @@ void getRecord() {
         for (int i = numOfPatient; i < (currentSize + numOfPatient) && i < MAX_PATIENTS; ++i) {
             cout << "\nEnter the name of the patient: ";
             getline(cin, patient[i].patient.name);
-            // ... (rest of the patient information input)
-            // (No changes in the patient input part)
-            // ...
+            
 
         }
         numOfPatient += currentSize;
         storeRecord();
     } else if (userType == 2) {
-        // If the user is a staff member, you can have a separate struct
-        // to store staff member details and handle the input accordingly.
-        // For simplicity, let's just display a message here.
+    
         cout << "\nStaff Member Details Entry is not implemented in this code.\n";
     } else {
         cout << "Invalid choice! Please enter either 1 (Patient) or 2 (Staff Member).\n";
