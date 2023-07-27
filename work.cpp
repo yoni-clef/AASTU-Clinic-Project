@@ -341,33 +341,48 @@ void displayAppointments() {
         }
     }
 }
-void getRecord() {
+void getRecord(){
     system("cls");
     int currentSize;
-    cout << "Enter the number of records you want to add: ";
-    cin >> currentSize;
-    cin.ignore();
+    cout<<"\nEnter the number of patient records you want to add:";
+    cin>>currentSize;
+            cin.ignore();
+    for(int i=numOfPatient;i<(currentSize+numOfPatient);++i){
+            cout<<"\nEnter the name of the patient: ";
+            getline(cin,patient[i].patient.name);
+            cout<<"Enter the birth date of the patient: ";
+            getline(cin,patient[i].patient.dateOfBirth);
+            cout<<"Enter the age of the patient: ";
+            cin>>patient[i].patient.age;
+            cout<<"Enter the Sex (M/F) of the patient: ";
+            cin>>patient[i].patient.sex;
+            cout<<"Enter the height of the patient: ";
+            cin>>patient[i].patient.height;
+            cout<<"Enter the weight of the patient: ";
+            cin>>patient[i].patient.weight;
+            cout<<"Enter the phone number of the patient: ";
+            cin.ignore();
+            getline(cin,patient[i].addressInfo.phoneNum);
+            cout<<"Enter the Sub-City where the Patient lives: ";
+            getline(cin,patient[i].addressInfo.subCity);
+            cout<<"Enter the city where the patient currently lives: ";
+            getline(cin,patient[i].addressInfo.city);
+            cout<<"Enter the home address of the patient: ";
+            getline(cin,patient[i].addressInfo.homeAddress);
+            cout<<"Enter the name of Emergency contact name: ";
+            getline(cin,patient[i].addressInfo.emergencyContactName);
+            cout<<"Enter the phone number of Emergency contact:";
+            getline(cin,patient[i].addressInfo.emergencyContactPhone);
+            cout<<"Enter the medical record number for the patient: ";
+            getline(cin,patient[i].medicalRecordNum);
+            cout<<"Enter a brief medical history for the patient: ";
+            getline(cin,patient[i].medicalHistory);
+            cout<<"Enter the date of registration: ";
+            getline(cin,patient[i].dateOfRegistration);
+            system("cls");
 
-    int userType;
-    cout << "Are you entering data for:\n";
-    cout << "1. Patient\n";
-    cout << "2. Staff Member\n";
-    cout << "Enter your choice (1 or 2): ";
-    cin >> userType;
-
-    if (userType == 1) {
-        for (int i = numOfPatient; i < (currentSize + numOfPatient) && i < MAX_PATIENTS; ++i) {
-            cout << "\nEnter the name of the patient: ";
-            getline(cin, patient[i].patient.name);
-            
-
-        }
-        numOfPatient += currentSize;
-        storeRecord();
-    } else if (userType == 2) {
-    
-        cout << "\nStaff Member Details Entry is not implemented in this code.\n";
-    } else {
-        cout << "Invalid choice! Please enter either 1 (Patient) or 2 (Staff Member).\n";
     }
+
+    numOfPatient+=currentSize;
+    storeRecord();
 }
